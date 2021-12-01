@@ -2,19 +2,36 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Form study</title>
+    <title>Payment</title>
   </head>
   <body>
     <form class="" action="index.html" method="post">
-      <input type="file" name="" value="">
-      <br><br>
-      <input type="date" name="" value="">
-      <br><br>
-      <input type="radio" name="" value="">
-      <br><br>
-      <input type="range" name="" value="">
-      <br><br>
-      <input type="submit" name="" >
+      <h2>Contact Details</h2>
+      <p>Name :* <input type="text" name="name_" value="" required > </p><br>
+      <fieldset>
+        <p>
+          <legend>Gender</legend>
+          Male:<input type="radio" name="gender" value="" required ><br>
+          Female:<input type="radio" name="gender" value="" required >
+        </p>
+      </fieldset>
+      <p>Address: <textarea name="address" rows="10" cols="80"></textarea> </p>
+      <p>Email :<input type="email" name="email" value="" required > </p><br>
+      <hr size="2" noshade>
+      <h2>Payment Information</h2>
+      <p>Card Type :
+        <select  name="card_type" required >
+            <option value="">--Select a card Type</option>
+            <option value="Visa">Visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="Phone pay">Phone pay</option>
+        </select>
+      </p>
+      <p>Card NUmber : <input type="text" name="card_number" value="" required > </p>
+      <p>Expire Date : <input type="date" name="date_exp" value="" required > </p>
+      <p>CVV :<input type="password" name="cvv" value="" required > </p>
+      <input type="submit" name="" value="Pay Now">
+      <input type="reset" name="" value="Reset">
     </form>
 
   </body>
